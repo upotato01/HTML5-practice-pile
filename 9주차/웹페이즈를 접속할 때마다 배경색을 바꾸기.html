@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8"> 
+    <meta http-equiv="refresh" content="1">
+        <title>웹페이즈를 접속할 때마다 배경색을 바꾸기</title> 
+        <script>
+
+        </script>
+    </head>
+    <body><h3>웹페이즈를 접속할 때마다 배경색을 바꾸기</h3> <hr>
+        <script>
+            let colors = ["red","blue","black","purple","pink","green","white"]; // 원소 6개의 배열 생성 
+            let yo= Math.floor(Math.random()*cc.length);
+            let d=new Date();
+            document.write("let colors = [red,blue,white,black,purple,pink,green]<br>");
+            document.write(d.getFullYear()+"년 ");
+            document.write(d.getMonth()+"월");
+            document.write(d.getDate()+"일 ");
+            document.write(d.getHours()+"시");
+            document.write(d.getMinutes()+"분");
+            document.write(d.getSeconds()+"초");
+            for(i=0;i<colors.length;i++)
+            if(d.getSeconds()==1){
+                    document.body.style.backgroundColor = 'red';
+                }else if(d.getSeconds()==10){
+                    document.body.style.backgroundColor = 'blue';
+                }else if(d.getSeconds()==20){
+                    document.body.style.backgroundColor = 'black';
+                }else if(d.getSeconds()==30){
+                    document.body.style.backgroundColor = 'purple';
+                }else if(d.getSeconds()==40){
+                    document.body.style.backgroundColor = 'pink';
+                }else if(d.getSeconds()==50){
+                    document.body.style.backgroundColor = 'green';
+                }else{
+                    document.body.style.backgroundColor = 'white';
+            }
+            
+        </script> 
+    </body> 
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>7주차 심화문제 2021261026 박상원</title>
+    <script>
+        var count1 = 0;
+        var count2 = 0;
+        var count3 = 0;
+        function colorChange(a){
+            if(a==1){
+                count1 ++;
+                alert("경고!! 1반은 "+count1+"회 클릭하셨습니다");
+            }else if(a==2){
+                count2 ++;
+                alert("경고!! 2반은 "+count2+"회 클릭하셨습니다");
+            }else if(a==3){
+                count3 ++;
+                alert("경고!! 3반은 "+count3+"회 클릭하셨습니다");
+            }else{
+                alert("잘못 누르셨습니다");
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        
+    </script>
+    <input type='radio' name='a' value='빨간색' onclick="colorChange(1)"/>1반<br>
+    <input type='radio' name='a' value='노란색' onclick="colorChange(2)"/>2반<br>
+    <input type='radio' name='a' value='파란색' onclick="colorChange(3)"/>3반
+</body>
+</html>

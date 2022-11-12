@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function about(a,b){
+            sum = a + b
+            return sum;
+        }
+        function flow(){
+            alert("버튼을 클릭하셨습니다");
+        }
+    </script>
+</head>
+<body>
+    <script>
+        num1 = prompt("첫 번째 문자열을 입력하시오");
+        num2 = prompt("두 번째 문자열을 입력하시오");
+        var n = about(num1,num2);
+        document.write(n);
+    </script>
+     <input type="button" value="버튼" onclick="flow()"> <!--onclick="  빈칸   " 에서 빈칸은 자바스크립트 영역이다-->
+</body>
+</html>

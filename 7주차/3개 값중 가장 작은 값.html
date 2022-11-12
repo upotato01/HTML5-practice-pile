@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function few(a,b,c){
+            if(a<b & a<c){
+                sum = a
+            }else if(b<a & b<c){
+                sum = b
+            }else if(c<a & c<b){
+                sum = c
+            }else{
+                alert("서로 다른 값을 입력하시오");
+            }
+            return sum;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        num1 = prompt("첫번째 숫자를 입력하세요")
+        num1 = parseInt(num1)
+        num2 = prompt("두번째 숫자를 입력하세요")
+        num2 = parseInt(num2)
+        num3 = prompt("세번째 숫자를 입력하세요")
+        num3 = parseInt(num3)
+        n = few(num1,num2,num3)
+        alert(sum);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        문제 : 3개의 수를 입력받아 제일 작은 값을 출력한다<br>
+        정답:
+        <script>
+            a=prompt("첫번째 숫자를 입력하세요");
+            b=prompt("두번째 숫자를 입력하세요");
+            c=prompt("세번째 숫자를 입력하세요");
+            if(a<b & a<c){
+                document.write(a);
+            }else if(b<a & b<c){
+                document.write(b);
+            }else if(c<a & c<b){
+                document.write(c);
+            }else{
+                document.write("없음 => 서로다른 값을 입력하시오");
+            }
+        </script>
+    </body>
+</html>

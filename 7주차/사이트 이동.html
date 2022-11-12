@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function four(){
+            let ret = confirm("정말로 이동하시겠습니까?");
+            if(ret == true){
+                location.href="http://www.mjc.ac.kr";
+            }else{
+                document.write("더 이상 보여드릴 자료가 없습니다");
+            }
+        }
+    </script>
+</head>
+<body>
+    <script>
+        four();
+    </script>
+    <form>
+        <input type="button" value="버튼 1" onclick="location.href='http:/www.mjc.ac.kr'">
+    </form>
+</body>
+</html>

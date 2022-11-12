@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function most(a,b,c){
+            let max=a;
+            if(max<b) mac=b;
+            if(max<c) max=c;
+            return max
+        }
+        function few(a,b,c){
+            let fews=a;
+            if(fews>b) fews=b;
+            if(fews>c) fews=c;
+            return fews
+        }
+    </script>
+</head>
+<body>
+    <script>
+        let num1 = prompt("첫번째 숫자를 입력하세요")
+        num1 = parseInt(num1)
+        let num2 = prompt("두번째 숫자를 입력하세요")
+        num2 = parseInt(num2)
+        let num3 = prompt("세번째 숫자를 입력하세요")
+        num3 = parseInt(num3)
+        n1 = most(num1,num2,num3)
+        n2 = few(num1,num2,num3)
+        alert(n1+","+n2);
+        document.write(num1+","+num2+","+num3)
+    </script>
+</body>
+</html>

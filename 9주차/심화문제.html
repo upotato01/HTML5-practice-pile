@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function read(para){
+            let a= Math.floor(Math.random()*9) + 1;
+            let b= Math.floor(Math.random()*9) + 1;
+            dab=a+b;
+            if(para==1){
+                ans=prompt(a+"+"+b+"?");
+                if(user == null){ // 취소 버튼이 클릭된 경우
+                        alert("구구단 연습을 종료합니다"); 
+                    }
+                    else{
+                        if(ans==dab){
+                            alert("정답!");
+                        }else{
+                            alert("실패!");
+                        }
+                    }
+            }else if(para==2){
+                ans=prompt(a+"-"+b+"?");
+                if(user == null){ // 취소 버튼이 클릭된 경우
+                        alert("구구단 연습을 종료합니다"); 
+                    }
+                    else{
+                        if(ans==dab){
+                            alert("정답!");
+                        }else{
+                            alert("실패!");
+                        }
+                    }
+            }else if(para==3){
+                ans=prompt(a+"*"+b+"?");
+                if(user == null){ // 취소 버튼이 클릭된 경우
+                        alert("구구단 연습을 종료합니다"); 
+                    }
+                    else{
+                        if(ans==dab){
+                            alert("정답!");
+                        }else{
+                            alert("실패!");
+                        }
+                    }
+            }else if(para==4){
+                ans=prompt(a+"/"+b+"?");
+                if(user == null){ // 취소 버튼이 클릭된 경우
+                        alert("구구단 연습을 종료합니다"); 
+                    }
+                    else{
+                        if(ans==dab){
+                            alert("정답!");
+                        }else{
+                            alert("실패!");
+                        }
+                    }
+            }
+        }
+    </script>
+    <title>심화문제</title>
+</head>
+<body>
+    <script>
+        function read(para){
+            let a= Math.floor(Math.random()*9) + 1;
+            let b= Math.floor(Math.random()*9) + 1;
+            dab=a+b;
+            if(para==1){
+                ans=prompt(a+"+"+b+"?");
+                if(ans == null){ // 취소 버튼이 클릭된 경우
+                        alert("구구단 연습을 종료합니다"); 
+                    }
+                    else{
+                        if(ans==dab){
+                            alert("정답!");
+                        }else{
+                            alert("실패!");
+                        }
+                    }
+            }else if(para==2){
+                ans=prompt(a+"-"+b+"?");
+                if(ans == null){ // 취소 버튼이 클릭된 경우
+                        alert("구구단 연습을 종료합니다"); 
+                    }
+                    else{
+                        if(ans==dab){
+                            alert("정답!");
+                        }else{
+                            alert("실패!");
+                        }
+                    }
+            }else if(para==3){
+                ans=prompt(a+"*"+b+"?");
+                if(ans == null){ // 취소 버튼이 클릭된 경우
+                        alert("구구단 연습을 종료합니다"); 
+                    }
+                    else{
+                        if(ans==dab){
+                            alert("정답!");
+                        }else{
+                            alert("실패!");
+                        }
+                    }
+            }else if(para==4){
+                ans=prompt(a+"/"+b+"?");
+                if(ans == null){ // 취소 버튼이 클릭된 경우
+                        alert("구구단 연습을 종료합니다"); 
+                    }
+                    else{
+                        if(ans==dab){
+                            alert("정답!");
+                        }else{
+                            alert("실패!");
+                        }
+                    }
+            }
+        }
+    </script>
+    <input type="button" value="더하기" onclick="read(1)">
+    <input type="button" value="빼기" onclick="read(2)">
+    <input type="button" value="곱하기" onclick="read(3)">
+    <input type="button" value="나누기" onclick="read(4)">
+</body>
+</html>

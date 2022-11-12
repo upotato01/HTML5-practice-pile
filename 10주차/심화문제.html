@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>심화문제01</title>
+    <script>
+        function aaa(num){
+            document.getElementById("p1");
+            document.getElementById("p2");
+            document.getElementById("p3");
+            if(num==1){
+                document.getElementById("p1").style.visibility ='visible';
+                document.getElementById("p2").style.visibility ='visible';
+                document.getElementById("p3").style.visibility ='visible';
+            }else if(num==2){
+                document.getElementById("p1").style.visibility ='hidden';
+                document.getElementById("p2").style.visibility ='hidden';
+                document.getElementById("p3").style.visibility ='hidden';
+            }else{
+                alert("경고");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>다음 빈 곳에 숨은 단어는?</h3>
+    <input type="button" value="보이기" onclick="aaa(1)">
+    <input type="button" value="숨기기" onclick="aaa(2)">
+    <br><hr>
+    <ul>
+        <li>I (<span id="p1">LOVE</span>) YOU</li>
+        <li>명지전문대학에서 (<span id="p2">정보통신공학과</span>)가 제일 좋은 과입니다</li>
+        <li>올해의 수능 날짜는 (<span id="p3">11월 17일</span>)</li>
+    </ul>
+</body>
+</html>

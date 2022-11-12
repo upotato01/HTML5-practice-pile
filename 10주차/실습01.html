@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>body {background: yellow;}</style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function aaa(){
+            let a=document.getElementById("p1");
+            a.style.fontSize="20px";
+        }
+        function bbb(){
+            let b=document.getElementById("p2");
+            b.style.border="1px solid red";
+        }
+        function ccc(){
+            let c=document.getElementById("p3");
+            c.style.color="blue";
+        }
+        function ddd(){
+            let d=document.getElementById("p4");
+            d.style.background="green";
+        }
+        function eee(){
+            let e1=document.getElementById("p2");
+            let e2=document.getElementById("p3");
+            let e3=document.getElementById("p5");
+            e1.style.textAlign="center";
+            e2.style.textAlign="center";
+            e3.style.textAlign="center";
+        }
+    </script>
+</head>
+<body>
+    <h3>산길</h3>
+    <p id="p1">오늘 아침 일찍 산에 올랐다. 가지고 간 물을 마셨다. 한참 올라 가는 도중에</p>
+    <div id="p2">산길을 간다. 말없이 호올로 산길을 간다</div>
+    <div id="p3">해는 져서 새소리 그치고 짐승의 발자취 그윽히 들리는</div>
+    <div id="p5"><span id="p4">산길</span>을 간다 말없이 밤에 홀로 산길을 간다</div><br><br>
+    <input type="button" value="글자크기" onclick="aaa()">
+    <input type="button" value="테두리" onclick="bbb()">
+    <input type="button" value="글자색" onclick="ccc()">
+    <input type="button" value="베경색" onclick="ddd()">
+    <input type="button" value="정렬" onclick="eee()">
+</body>
+</html>
