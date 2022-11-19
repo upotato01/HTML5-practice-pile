@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change01(para){
+            let a=document.getElementById("img");
+            a.src= para;
+        }
+    </script>
+</head>
+<body>
+    <img src="apple.png" id="img" onmouseover="change01('banana.png')" onmouseout="change01('apple.png')">
+</body>
+</html>

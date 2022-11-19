@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> 
+    <title>onfocus와 onblur</title> 
+    <script>
+        function aaa(){
+            let a=document.getElementById("name");
+            a.value="";
+        }
+        function bbb(){
+            let b=document.getElementById("name");
+            b.value="";
+        }
+    </script>
+</head>
+<body>
+    <h3>onfocus와 onblur</h3> <hr>
+    <p>이름을 입력하지 않고 다른 창으로 이동할 수 없습니다.</p>
+    <form>
+        이름 <input type="text" id="name" onfocus="aaa()" onblur="bbb()"><p>
+        학번 <input type="text">
+        <input type="button" value="보내기">
+    </form>
+</body>
+</html>

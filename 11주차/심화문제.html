@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="1">
+    <title>2021261026 박상원 11주차 심화문제</title>
+    <script>
+        function aaa(){
+            let color = ["red","pink","green","yellow","blue","purple"];
+            a=new Date();
+            y=a.getFullYear();
+            m=a.getMonth();
+            d=a.getDate();
+            h=a.getHours();
+            m1=a.getMinutes();
+            msg=y+"년 "+m+"월 "+d+"일 "+h+"시 "+m1+"분 ";
+            document.write(msg);
+            yo=a.getDay();
+            document.bgColor=color[yo];
+        }
+    </script>
+</head>
+<body onload="aaa()">
+    <script>
+
+    </script>
+</body>
+</html>
