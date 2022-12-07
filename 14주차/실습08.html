@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마지막 실습문제</title>
+    <script>
+        function aaa(){
+            a=document.getElementById("c")
+            location.href=a.value;
+        }
+    </script>
+</head>
+<body>
+    사이트 선택:
+    <select id="c" onchange="aaa()">
+        <option value="http://www.naver.com">네이버
+        <option value="http://www.google.com">구글
+        <option value="http://www.microsoft.com">마이크로소프트
+    </select>
+</body>
+</html>

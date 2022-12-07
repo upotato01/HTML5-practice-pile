@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        td{width:100px; height:100px; text-align:center; font-size:50px;}
+    </style> 
+    <script>
+        function aaa(para){
+            var v=document.getElementById(para);
+            v.innerHTML = Math.floor(Math.random()*10);
+            //각 테이블 셀의 값이 같다면 성공 경고창을 띄운다.
+            t1=document.getElementById('a');
+            t2=document.getElementById('b');
+            t3=document.getElementById('c');
+            if((t1.innerHTML == t2.innerHTML) && (t3.innerHTML == t2.innerHTML)){
+                alert("성공쓰~~ ");
+            }
+        }
+    </script>
+</head> 
+<body>
+    <table border="2"> 
+        <tr>
+        <td id="a" onclick="aaa(a)">0</td>
+        <td id="b" onclick="aaa(b)">0</td>
+        <td id="c" onclick="aaa(c)">0</td>
+        </tr> 
+    </table>
+</body> 
+</html>

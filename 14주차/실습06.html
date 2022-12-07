@@ -1,0 +1,20 @@
+<!DOCTYPE html> <html>
+<head>
+    <meta charset="UTF-8"> 
+    <script>
+        function aaa(para) {
+            if(para==1){
+                window.open("https://www.naver.com/","","");
+            }else if(para==2){
+                window.open("https://www.naver.com/","","width=1000,height=1000");
+            }else{
+                window.open("https://www.naver.com/","_self","");
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="새 탭에 문서열기" onclick="aaa(1)"><br><br> 
+    <input type="button" value="팝업으로 문서 열기" onclick="aaa(2)"><br><br> 
+    <input type="button" value="현재 위치에서 문서열기" onclick="aaa(3)"><br><br>
+</body>
